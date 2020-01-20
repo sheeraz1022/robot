@@ -1,6 +1,9 @@
 import _ from "lodash";
 import Command from "../command/command";
 import Place from "../command/place"
+import Left from "../command/left"
+import Right from "../command/right"
+import Move from "../command/move"
 
 
 export default class Robot {
@@ -65,6 +68,27 @@ export default class Robot {
   }
 
   /**
+   * To rotate the Robot in 90 degrees clockwise
+   */
+  RotateToRight() {
+    return this._execute(Right);
+  }
+
+  /**
+   * To rotate the Robot in 90 degrees anti-clockwise
+   */
+  RotateToLeft() {
+    return this._execute(Left);
+  }
+
+  /**
+   * To move the Robot in same direction
+   */
+  Move() {
+    return this._execute(Move);
+  }
+
+  /**
    * To get the current position of the Robot
    */
   GetRobotPosition() {
@@ -73,4 +97,6 @@ export default class Robot {
     }
     return null;
   }
+
+
 }
