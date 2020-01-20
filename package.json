@@ -5,5 +5,8 @@
   "main": "index.js",
   "repository": "https://github.com/sheeraz1022/robot.git",
   "author": "Sheeraz Shaikh",
-  "license": "MIT"
+  "license": "UNLICENSED",
+  "dependencies": {
+    "lodash": "^4.17.15"
+  }
 }
