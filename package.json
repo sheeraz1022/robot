@@ -1,0 +1,9 @@
+{
+  "name": "rea-robot",
+  "version": "1.0.0",
+  "description": "This is a toy simulator which moves around 5X5 size of tabletop.",
+  "main": "index.js",
+  "repository": "https://github.com/sheeraz1022/robot.git",
+  "author": "Sheeraz Shaikh",
+  "license": "MIT"
+}
