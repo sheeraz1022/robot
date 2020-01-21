@@ -7,7 +7,8 @@
   "author": "Sheeraz Shaikh",
   "license": "MIT",
   "scripts": {
-    "robot:run": "node -r esm index.js"
+    "robot:run": "node -r esm index.js",
+    "test": "echo 'Hello World!'"
   },
   "dependencies": {
     "esm": "^3.2.25",
