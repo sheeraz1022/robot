@@ -5,8 +5,13 @@
   "main": "index.js",
   "repository": "https://github.com/sheeraz1022/robot.git",
   "author": "Sheeraz Shaikh",
-  "license": "UNLICENSED",
+  "license": "MIT",
+  "scripts": {
+    "robot:run": "node -r esm index.js"
+  },
   "dependencies": {
-    "lodash": "^4.17.15"
+    "esm": "^3.2.25",
+    "lodash": "^4.17.15",
+    "prompt": "^1.0.0"
   }
 }

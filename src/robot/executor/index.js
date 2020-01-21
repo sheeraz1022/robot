@@ -1,4 +1,4 @@
-import Parse from "../../helpers/parser";
+import Parse from "../../utils/parser";
 import _ from "lodash";
 
 export default class {
