@@ -7,11 +7,18 @@
   "author": "Sheeraz Shaikh",
   "license": "MIT",
   "scripts": {
-    "robot:run": "node -r esm index.js"
+    "robot:run": "node -r esm index.js",
+    "test": "mocha -R spec --require babel-core/register ./tests/runner.js"
   },
   "dependencies": {
     "esm": "^3.2.25",
     "lodash": "^4.17.15",
+    "mocha": "^7.0.0",
     "prompt": "^1.0.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "chai": "^4.2.0"
   }
 }
