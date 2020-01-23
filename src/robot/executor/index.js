@@ -1,11 +1,12 @@
 import Parse from "../../utils/parser";
 import { isEmpty, toInteger } from "lodash";
+import messages from "../../utils/messages";
 
 export default class {
   /**
    * Execute action commands provided by user
-   * @param {string} text
-   * @param {Robot} controller
+   * @param {string} text - command provided by user
+   * @param {Robot} controller - instance of robot
    */
   static ExecuteAction(text, controller) {
     let regex = {
@@ -32,6 +33,6 @@ export default class {
       }
     }
 
-    return false;
+    return messages.VALID_COMMAND_ERROR;
   }
 }

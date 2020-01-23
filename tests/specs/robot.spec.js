@@ -21,6 +21,21 @@ export default () => {
     });
 
     describe("Creation of robot and placement", () => {
+        it("should create a robot and report without placing on table", () => {
+            let robot = new Robot(new Table(5, 5));
+            let executionResult = robot.GetRobotPosition();
+            expect(executionResult).to.be.null;
+        });
+
+        it("should create a robot and place outside boundaries of table", () => {
+            let robot = new Robot(new Table(5, 5));
+            let executionResult = robot.PlaceRobot(5, 5, Direction.NORTH);
+
+            expect(typeof executionResult).to.be.equals('boolean');
+            expect(executionResult).to.be.equals(false);
+            expect(robot.GetRobotPosition()).to.be.null;
+        });
+
         it("should create a robot and place it at 1, 1 with North direction", () => {
             let robot = new Robot(new Table(5, 5));
             let executionResult = robot.PlaceRobot(1, 1, Direction.NORTH);
