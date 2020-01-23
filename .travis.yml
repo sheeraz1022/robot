@@ -1,0 +1,13 @@
+language:
+- node_js
+node_js:
+- "10.13"
+sudo: false
+before_install:
+- export PATH=$HOME/.yarn/bin:$PATH
+cache: yarn
+install:
+- yarn
+script:
+- echo "Hello World!"
+- yarn test
