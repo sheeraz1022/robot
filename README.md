@@ -20,3 +20,5 @@ This is a Robot Simulator which hangs around a table of 5 X 5 size in any direct
 * REPORT (This will show you current location)
 
 
+## Code Coverage
+As its evident via the badge present on the top around the coverage of code. For more indepth report please visit [here](https://coveralls.io/github/sheeraz1022/robot)
