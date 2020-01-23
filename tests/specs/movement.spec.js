@@ -11,7 +11,7 @@ export default () => {
 
         it("should move the robot to left on the table", () => {
             let robot = new Robot(new Table(5, 5));
-            let executionResult = robot.PlaceRobot(2,2,Direction.NORTH);
+            let executionResult = robot.PlaceRobot(2, 2, Direction.NORTH);
 
             expect(typeof executionResult).to.be.equals('boolean');
             expect(executionResult).to.be.equals(true);
@@ -25,6 +25,11 @@ export default () => {
             executionResult = robot.Move();
             expect(executionResult).to.be.equals(true);
             expect(robot.GetRobotPosition()).to.be.deep.equal({ x: 1, y: 2, direction: Direction.WEST });
+
+            executionResult = robot.RotateToRight();
+            expect(typeof executionResult).to.be.equals('boolean');
+            expect(executionResult).to.be.equals(true);
+            expect(robot.GetRobotPosition()).to.be.deep.equal({ x: 1, y: 2, direction: Direction.NORTH });
         });
     });
 };
