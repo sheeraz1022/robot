@@ -1,7 +1,7 @@
 import Abstract from "./abstract";
 import Direction from "../utils/direction";
 import Command from "./command";
-import _ from "lodash";
+import { isEqual, findIndex, size } from "lodash";
 
 export default class extends Abstract {
   /**
@@ -11,11 +11,11 @@ export default class extends Abstract {
   static Execute(command) { 
 
     const directions = Object.keys(Direction);
-    let result = _.findIndex(directions, item =>
-      _.isEqual(item, command.Direction)
+    let result = findIndex(directions, item =>
+      isEqual(item, command.Direction)
     );
     let selectedDirection = null;
-    if (result === 0) selectedDirection = directions[_.size(directions) - 1];
+    if (result === 0) selectedDirection = directions[size(directions) - 1];
     else selectedDirection = directions[result - 1];
 
     return new Command(command.X, command.Y, selectedDirection);

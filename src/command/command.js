@@ -1,5 +1,5 @@
 import Direction from "../utils/direction";
-import _ from "lodash";
+import { includes } from "lodash";
 
 /**
  * Placing a Robot with position of (x, y) coordinate and cardinal direction.
@@ -11,7 +11,7 @@ export default class {
     this.y = y;
 
     // if the direction is not valid accroding to cardinal system
-    if (!_.includes(Direction, direction)) throw new Error("Invalid direction");
+    if (!includes(Direction, direction)) throw new Error("Invalid direction");
     this.direction = direction;
   }
 
