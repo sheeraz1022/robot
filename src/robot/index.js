@@ -1,4 +1,4 @@
-import _ from "lodash";
+import { isEmpty } from "lodash";
 import Command from "../command/command";
 import Place from "../command/place"
 import Left from "../command/left"
@@ -44,7 +44,7 @@ export default class Robot {
    * @param {Command} command
    */
   _execute(command) {
-    if (!_.isEmpty(this.robot)) {
+    if (!isEmpty(this.robot)) {
       let commandResult = command.Execute(this.robot.position);
       if (this._safeToHangAround(commandResult)) {
         return this._changeRobotState(commandResult);
@@ -92,7 +92,7 @@ export default class Robot {
    * To get the current position of the Robot
    */
   GetRobotPosition() {
-    if (!_.isEmpty(this.robot)) {
+    if (!isEmpty(this.robot)) {
       return this.robot.position;
     }
     return null;

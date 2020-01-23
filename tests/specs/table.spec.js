@@ -1,7 +1,3 @@
-// import prompt from 'prompt';
-import _ from "lodash";
-// import Executor from "./src/robot/executor";
-// import Robot from "./src/robot";
 import Table from "./../../src/table";
 
 import chai from "chai";

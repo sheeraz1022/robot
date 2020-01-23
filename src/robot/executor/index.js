@@ -1,5 +1,5 @@
 import Parse from "../../utils/parser";
-import _ from "lodash";
+import { isEmpty, toInteger } from "lodash";
 
 export default class {
   /**
@@ -23,10 +23,10 @@ export default class {
     else if (regex.report.exec(text)) return controller.GetRobotPosition();
     else {
       let place = regex.place.exec(text);
-      if (!_.isEmpty(place)) {
+      if (!isEmpty(place)) {
         return controller.PlaceRobot(
-          _.toInteger(place[1]),
-          _.toInteger(place[2]),
+          toInteger(place[1]),
+          toInteger(place[2]),
           Parse(place[3])
         );
       }

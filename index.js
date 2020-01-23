@@ -1,5 +1,5 @@
 import prompt from 'prompt';
-import _ from "lodash";
+import { isEqual } from "lodash";
 import Executor from "./src/robot/executor";
 import Robot from "./src/robot";
 import Table from "./src/table";
@@ -10,7 +10,7 @@ let continousPrompt = () => {
   prompt.get(["command"], (err, result) => {
     if (err) throw err;
 
-    if (_.isEqual(result.command.toLowerCase().trim(), "exit")) {
+    if (isEqual(result.command.toLowerCase().trim(), "exit")) {
       return;
     }
 
