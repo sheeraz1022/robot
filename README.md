@@ -21,4 +21,11 @@ This is a Robot Simulator which hangs around a table of 5 X 5 size in any direct
 
 
 ## Code Coverage
+
+* In order to see realtime code coverage, use `yarn code_coverage` command.
+
 As its evident via the badge present on the top around the coverage of code. For more indepth report please visit [here](https://coveralls.io/github/sheeraz1022/robot)
+
+## Notes
+
+* Please refer to PROBLEM.md for information on what this repo is made for
