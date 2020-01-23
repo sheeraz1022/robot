@@ -93,7 +93,7 @@ export default class Robot {
    */
   GetRobotPosition() {
     if (!isEmpty(this.robot)) {
-      return this.robot.position;
+      return this.robot.position.X + ', ' + this.robot.position.Y + ', ' + this.robot.position.Direction;
     }
     return null;
   }

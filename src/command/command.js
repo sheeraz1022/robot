@@ -36,10 +36,4 @@ export default class {
     return this.direction;
   }
 
-  /**
-   * To override console.log
-   */
-  inspect(depth, opts) {
-    return this.X + "," + this.Y + "," + this.Direction;
-  }
 }
