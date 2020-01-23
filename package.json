@@ -8,12 +8,14 @@
   "license": "MIT",
   "scripts": {
     "robot:run": "node -r esm index.js",
-    "test": "mocha -R spec --require babel-core/register ./tests/runner.js"
+    "test": "mocha -R spec --require babel-core/register ./tests/runner.js",
+    "code_coverage": "nyc --reporter=text npm run test"
   },
   "dependencies": {
     "esm": "^3.2.25",
     "lodash": "^4.17.15",
     "mocha": "^7.0.0",
+    "nyc": "^15.0.0",
     "prompt": "^1.0.0"
   },
   "devDependencies": {
