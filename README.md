@@ -1,3 +1,4 @@
+[![Coverage Status](https://coveralls.io/repos/github/sheeraz1022/robot/badge.svg?branch=master)](https://coveralls.io/github/sheeraz1022/robot?branch=master)
 # Robot Simulator
 
 ## Introduction
