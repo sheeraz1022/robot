@@ -27,7 +27,6 @@ export default () => {
 
             expect(typeof executionResult).to.be.equals('boolean');
             expect(executionResult).to.be.equals(true);
-            //expect(robot.GetRobotPosition()).to.be.deep.equal({ x: 1, y: 1, direction: Direction.NORTH });
             expect(robot.GetRobotPosition()).to.be.equal("1, 1, NORTH");
 
         });
@@ -38,7 +37,6 @@ export default () => {
 
             expect(typeof executionResult).to.be.equals('boolean');
             expect(executionResult).to.be.equals(true);
-            //expect(robot.GetRobotPosition()).to.be.deep.equal({ x: 0, y: 0, direction: Direction.WEST });
             expect(robot.GetRobotPosition()).to.be.deep.equal("0, 0, WEST");
         });
 
@@ -48,26 +46,20 @@ export default () => {
 
             expect(typeof executionResult).to.be.equals('boolean');
             expect(executionResult).to.be.equals(true);
-            // expect(robot.GetRobotPosition()).to.be.deep.equal({ x: 0, y: 0, direction: Direction.WEST });
             expect(robot.GetRobotPosition()).to.be.equal("0, 0, WEST");
 
             executionResult = robot.Move();
             expect(typeof executionResult).to.be.equals('boolean');
             expect(executionResult).to.be.equals(false);
-            // expect(robot.GetRobotPosition()).to.be.deep.equal({ x: 0, y: 0, direction: Direction.WEST });
-
             expect(robot.GetRobotPosition()).to.be.equal("0, 0, WEST");
 
             executionResult = robot.PlaceRobot(0, 0, Direction.SOUTH);
             expect(executionResult).to.be.equals(true);
-            // expect(robot.GetRobotPosition()).to.be.deep.equal({ x: 0, y: 0, direction: Direction.SOUTH });
-
             expect(robot.GetRobotPosition()).to.be.equal("0, 0, SOUTH");
 
             executionResult = robot.Move();
             expect(typeof executionResult).to.be.equals('boolean');
             expect(executionResult).to.be.equals(false);
-            // expect(robot.GetRobotPosition()).to.be.deep.equal({ x: 0, y: 0, direction: Direction.SOUTH });
             expect(robot.GetRobotPosition()).to.be.equal("0, 0, SOUTH");
         });
 
@@ -77,28 +69,20 @@ export default () => {
 
             expect(typeof executionResult).to.be.equals('boolean');
             expect(executionResult).to.be.equals(true);
-            // expect(robot.GetRobotPosition()).to.be.deep.equal({ x: 4, y: 0, direction: Direction.EAST });
-
             expect(robot.GetRobotPosition()).to.be.equal("4, 0, EAST");
 
             executionResult = robot.Move();
             expect(typeof executionResult).to.be.equals('boolean');
             expect(executionResult).to.be.equals(false);
-            // expect(robot.GetRobotPosition()).to.be.deep.equal({ x: 4, y: 0, direction: Direction.EAST });
-
             expect(robot.GetRobotPosition()).to.be.equal("4, 0, EAST");
 
             executionResult = robot.PlaceRobot(4, 0, Direction.SOUTH);
             expect(executionResult).to.be.equals(true);
-            // expect(robot.GetRobotPosition()).to.be.deep.equal({ x: 4, y: 0, direction: Direction.SOUTH });
-
             expect(robot.GetRobotPosition()).to.be.equal("4, 0, SOUTH");
 
             executionResult = robot.Move();
             expect(typeof executionResult).to.be.equals('boolean');
             expect(executionResult).to.be.equals(false);
-            // expect(robot.GetRobotPosition()).to.be.deep.equal({ x: 4, y: 0, direction: Direction.SOUTH });
-
             expect(robot.GetRobotPosition()).to.be.equal("4, 0, SOUTH");
         });
 
@@ -108,28 +92,20 @@ export default () => {
 
             expect(typeof executionResult).to.be.equals('boolean');
             expect(executionResult).to.be.equals(true);
-            // expect(robot.GetRobotPosition()).to.be.deep.equal({ x: 0, y: 4, direction: Direction.NORTH });
-
             expect(robot.GetRobotPosition()).to.be.equal("0, 4, NORTH");
 
             executionResult = robot.Move();
             expect(typeof executionResult).to.be.equals('boolean');
             expect(executionResult).to.be.equals(false);
-            // expect(robot.GetRobotPosition()).to.be.deep.equal({ x: 0, y: 4, direction: Direction.NORTH });
-
             expect(robot.GetRobotPosition()).to.be.equal("0, 4, NORTH");
 
             executionResult = robot.PlaceRobot(0, 4, Direction.WEST);
             expect(executionResult).to.be.equals(true);
-            // expect(robot.GetRobotPosition()).to.be.deep.equal({ x: 0, y: 4, direction: Direction.WEST });
-
             expect(robot.GetRobotPosition()).to.be.equal("0, 4, WEST");
 
             executionResult = robot.Move();
             expect(typeof executionResult).to.be.equals('boolean');
             expect(executionResult).to.be.equals(false);
-            // expect(robot.GetRobotPosition()).to.be.deep.equal({ x: 0, y: 4, direction: Direction.WEST });
-
             expect(robot.GetRobotPosition()).to.be.equal("0, 4, WEST");
         });
 
@@ -139,28 +115,20 @@ export default () => {
 
             expect(typeof executionResult).to.be.equals('boolean');
             expect(executionResult).to.be.equals(true);
-            // expect(robot.GetRobotPosition()).to.be.deep.equal({ x: 4, y: 4, direction: Direction.EAST });
-
             expect(robot.GetRobotPosition()).to.be.equal("4, 4, EAST");
 
             executionResult = robot.Move();
             expect(typeof executionResult).to.be.equals('boolean');
             expect(executionResult).to.be.equals(false);
-            // expect(robot.GetRobotPosition()).to.be.deep.equal({ x: 4, y: 4, direction: Direction.EAST });
-
             expect(robot.GetRobotPosition()).to.be.equal("4, 4, EAST");
 
             executionResult = robot.PlaceRobot(4, 4, Direction.NORTH);
             expect(executionResult).to.be.equals(true);
-            // expect(robot.GetRobotPosition()).to.be.deep.equal({ x: 4, y: 4, direction: Direction.NORTH });
-
             expect(robot.GetRobotPosition()).to.be.equal("4, 4, NORTH");
 
             executionResult = robot.Move();
             expect(typeof executionResult).to.be.equals('boolean');
             expect(executionResult).to.be.equals(false);
-            // expect(robot.GetRobotPosition()).to.be.deep.equal({ x: 4, y: 4, direction: Direction.NORTH });
-
             expect(robot.GetRobotPosition()).to.be.equal("4, 4, NORTH");
         });
     });
