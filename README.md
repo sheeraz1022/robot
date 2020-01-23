@@ -41,7 +41,7 @@ If you don't have your environment setup and prefer dockerized way of running th
 
 ## Code Coverage
 
-* In order to see realtime code coverage, use `yarn code_coverage` command.
+* In order to see realtime code coverage, use `npm run code_coverage` command.
 * As its evident via the badge present on the top around the coverage of code. For more indepth report please visit [here](https://coveralls.io/github/sheeraz1022/robot)
 
 ## Notes
