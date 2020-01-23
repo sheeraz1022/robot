@@ -8,17 +8,28 @@
   "license": "MIT",
   "scripts": {
     "robot:run": "node -r esm index.js",
-    "test": "mocha -R spec --require babel-core/register ./tests/runner.js"
+    "test": "mocha -R spec --require babel-core/register ./tests/runner.js",
+    "code_coverage": "nyc --reporter=text npm run test",
+    "coveralls": "nyc --reporter=text-lcov npm run test | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage"
   },
   "dependencies": {
     "esm": "^3.2.25",
     "lodash": "^4.17.15",
     "mocha": "^7.0.0",
+    "nyc": "^15.0.0",
     "prompt": "^1.0.0"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-preset-env": "^1.7.0",
-    "chai": "^4.2.0"
+    "chai": "^4.2.0",
+    "coveralls": "^3.0.9"
+  },
+  "nyc": {
+    "exclude": [
+      "src/command/abstract.js",
+      "index.js",
+      "tests/"
+    ]
   }
 }
